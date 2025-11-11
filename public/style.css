@@ -54,7 +54,8 @@ header {
 }
 /* Section One (Hero Section) */
 .hero-section {
-    background-image: url('../static/background-image.png');
+    background-image: url('/static/background-image.png');
+;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
