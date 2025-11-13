@@ -7,22 +7,29 @@
 body {
     font-family: "poppins",sans-serif;
 }
-
 header {
     top: 0;
     position: sticky;
     z-index: 1000;
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,o.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    transition: padding 0.3s ease;
 }
+
+
+.logo img {
+    width: 50px;            
+    height: auto;           
+    object-fit: contain;
+}
+
 
 .nav-links {
     display: flex;
@@ -30,27 +37,18 @@ header {
     gap: 1.5rem;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color:#007bff;
-}
-
 .nav-links a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    transition: 0.3s;
-    font-weight: 650;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #007bff;
     border-bottom: 2px solid #007bff;
-    transition: border-bottom 1s ease;
     padding-bottom: 2px;
-    
-    
+    transition: border-bottom 0.3s ease;
 }
 
 .hero-section {
