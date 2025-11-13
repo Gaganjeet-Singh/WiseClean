@@ -7,36 +7,38 @@
 body {
     font-family: "poppins",sans-serif;
 }
+
+/* HEADER */
 header {
     top: 0;
     position: sticky;
     z-index: 1000;
-    background: #fff;
+    background:#fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+
+    padding: 0.6rem 1.5rem;   
 }
 
-
+/* LOGO */
 .logo img {
-    width: 50px;            
-    height: auto;           
+    width: 50px;      
     object-fit: contain;
+    margin-left: -10px;  
 }
 
-
+/* NAV LINKS */
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.2rem;    
 }
-
 .nav-links a {
     text-decoration: none;
     color: #333;
@@ -48,7 +50,6 @@ header {
     color: #007bff;
     border-bottom: 2px solid #007bff;
     padding-bottom: 2px;
-    transition: border-bottom 0.3s ease;
 }
 
 .hero-section {
