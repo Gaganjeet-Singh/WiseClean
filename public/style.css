@@ -119,11 +119,12 @@ header {
         font-size: 1rem;
     }
 }
-/* ===== Section ===== */
+
 .services-section {
   background-color: #f8f9fa;
   padding: 4rem 2rem;
   text-align: center;
+  background-color: #9fdcf5;
 }
 
 .services-header {
@@ -142,27 +143,25 @@ header {
   color: #555;
 }
 
-/* ===== Flexbox Layout ===== */
+
 .services-flex {
   display: flex;
-  flex-wrap: wrap;                /* allows wrapping on smaller screens */
-  justify-content: center;        /* center horizontally */
-  gap: 2rem;                      /* space between cards */
+  flex-wrap: wrap;
+  justify-content: center;       
+  gap: 2rem;                      
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ===== Each Card ===== */
+
 .service-item-image {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  /* Responsive width */
-  flex: 1 1 260px;   /* grow | shrink | base width */
-  max-width: 280px;  /* optional limit */
+  flex: 1 1 260px;   
+  max-width: 280px; 
 }
 
 .service-item-image:hover {
@@ -170,7 +169,7 @@ header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== Image Styling ===== */
+
 .service-item-image img {
   width: 100%;
   height: 220px;
@@ -178,7 +177,7 @@ header {
   display: block;
 }
 
-/* ===== Description ===== */
+
 .service-item-desc {
   padding: 1.5rem;
 }
@@ -196,7 +195,7 @@ header {
   line-height: 1.6;
 }
 
-/* ===== Responsive Design ===== */
+
 @media (max-width: 1024px) {
   .services-flex {
     justify-content: center;
@@ -206,7 +205,7 @@ header {
 
 @media (max-width: 768px) {
   .service-item-image {
-    flex: 1 1 45%; /* two per row on tablets */
+    flex: 1 1 45%; 
     max-width: 100%;
   }
   .service-item-image img {
@@ -216,7 +215,7 @@ header {
 
 @media (max-width: 480px) {
   .service-item-image {
-    flex: 1 1 100%; /* single column on phones */
+    flex: 1 1 100%; 
   }
   .service-item-desc h3 {
     font-size: 1.15rem;
@@ -224,4 +223,51 @@ header {
   .service-item-desc p {
     font-size: 0.9rem;
   }
+}
+.work {
+  width: 100%;
+  padding: 1.5rem 1rem;   
+  background: #fff;
+}
+
+.work-section-head {
+  text-align: center;
+  margin-bottom: 1.2rem;  
+}
+
+.work-section-head h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #000;
+}
+
+
+.work-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;            
+  padding: 1rem 0;        
+  background: #fff;
+}
+
+
+.work-section-info {
+  flex: 1 1 240px;
+  max-width: 280px;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+
+.work-section-info h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  color: #003366;        
+}
+
+.work-section-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
 }
