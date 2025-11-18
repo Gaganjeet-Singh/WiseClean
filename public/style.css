@@ -507,24 +507,75 @@ header {
     transform: scale(1.05);
 }
 
+/* ============================
+   MOBILE MODERN STYLING
+============================ */
 @media (max-width: 768px) {
 
-    
-    .booking-grid {
-        padding: 0 16px;        
-        gap: 20px;             
-        margin: 20px auto;
+    /* The card around the form */
+    .booking-card {
+        background: #ffffff;
+        padding: 20px 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
     }
 
-    
+    /* grid becomes a single column */
+    .booking-grid {
+        padding: 0;
+        margin: 0;
+        gap: 22px;
+        justify-content: flex-start;
+    }
+
+    /* field containers */
     .booking-item {
         width: 100%;
+        gap: 6px;
     }
 
-    
-    .booking-field {
-        padding: 12px 14px;
+    /* labels */
+    .booking-item label {
         font-size: 15px;
+        color: #444;
+        font-weight: 600;
+    }
+
+    /* inputs */
+    .booking-field {
+        padding: 13px 16px;
+        border-radius: 12px;
+        font-size: 15px;
+        border: 1.5px solid #ccc;
+    }
+
+    .booking-field:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    }
+
+    /* textarea */
+    #address.booking-field {
+        height: 110px;
+        border-radius: 12px;
+    }
+
+    /* modern button */
+    .booking-btn {
+        width: 100%;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: 600;
+        background: linear-gradient(135deg, #007bff, #005fcc);
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+        transition: 0.2s;
+    }
+
+    .booking-btn:active {
+        transform: scale(0.96);
     }
 }
-
